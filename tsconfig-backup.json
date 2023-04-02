@@ -1,0 +1,42 @@
+{
+  // Compila ao salvar
+  "compileOnSave": true,
+  // Opções do compilador
+  "compilerOptions": {
+    // Versão do JS gerado
+    "target": "ESNext",
+    // Versão dp type module
+    "module": "ESNext",
+    // Vai usar bibliotecas do ESNext e do DOM
+    "lib": ["ESNext", "DOM"],
+    // Gera um source map ao compilar (gera um arquivo .map que é usado somente pelo browser quando em desenvolvimento para indicar o erro no arquivo certo)
+    "sourceMap": true,
+    // Não compilar (padrão: false)
+    "noEmit": false,
+    // Permite importar arquivos js (padrão: false (não permite))
+    "allowJs": true,
+    // Remove os comentários
+    "removeComments": true,
+    // Modo estrito (inclui outras opções)
+    "strict": true,
+    // Opções especificas do strict:
+    // [strict] É necessario indicar o tipo de dado dos que não que não são inferidos
+    "noImplicitAny": true,
+    // [strict] Adiciona "use strict" ao JavaScript
+    "alwaysStrict": true,
+    // [strict] Verifica a possibilidade do dado ser null | undefined
+    "strictNullChecks": true,
+    // [strict] Necessária declarar o this
+    "noImplicitThis": true,
+    // Indica a possibilidade de retorno undefined
+    "noImplicitReturns": true,
+    // Indica parâmetros e variáveis que não foram uilizados
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "outDir": "dist"
+  },
+  // Compila o que estiver na pasta src
+  "include": ["src"],
+  // Não compila o que estiver na pasta node_modules
+  "exclude": ["node_modules"]
+}

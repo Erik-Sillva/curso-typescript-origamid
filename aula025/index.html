@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript Dados</title>
+    <style>
+        body {
+            margin: 2rem;
+            font-size: 1rem;
+            font-family: sans-serif;
+        }
+
+        table#transactions {
+            border-spacing: 0;
+            text-align: left;
+        }
+
+        table#transactions td, table#transactions th {
+            padding: .5rem 1rem;
+        }
+
+        table#transactions tr:nth-child(even) {
+            background: ghostwhite;
+        }
+
+        h2, p {
+            margin-left: 1rem;
+        }
+
+        h2 {
+            border-top: 3px solid ghostwhite;
+            padding-top: 1rem;
+        }
+
+        div {
+            border-top: 3px solid ghostwhite;
+        }
+    </style>
+</head>
+<body>
+    <h2>Estatísticas</h2>
+    <p id="total">Total: <span></span></p>
+    <div id="payment"></div>
+    <div id="status"></div>
+    <p id="bestDay">Dia com mais vendas: <span></span></p>
+    <h2>Dados</h2>
+    <table id="transactions">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Compra</th>
+                <th>Pagamento</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+    <script type="module" src="./dist/script.js"></script>
+</body>
+</html>

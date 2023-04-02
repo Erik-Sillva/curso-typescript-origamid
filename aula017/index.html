@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container, form, .container-inputs, .container-input {
+            width: 100%;
+        }
+
+        .container-input {
+            padding: .5em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        input {
+            max-width: 300px;
+            padding: .5em;
+            border: 1px solid rgb(26, 26, 26);
+            border-radius: 3px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <form method="get" id="form">
+            <div class="container-inputs">
+                <div class="container-input">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="container-input">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                </div>
+
+                <div class="container-input">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
