@@ -68,11 +68,6 @@ export default class Slide {
         if (this.slide instanceof HTMLVideoElement) {
             this.container.appendChild(divSound);
             this.autoVideo(this.slide);
-            divSound.addEventListener('click', () => {
-                if (this.slide instanceof HTMLVideoElement) {
-                    this.soundVideo(this.slide);
-                }
-            });
         }
         else {
             this.auto(this.time);
@@ -118,7 +113,7 @@ export default class Slide {
             if (this.slide instanceof HTMLVideoElement) {
                 this.slide.pause();
             }
-        }, 300);
+        }, 200);
     }
     continue() {
         document.body.classList.remove('paused');
@@ -158,6 +153,11 @@ export default class Slide {
         this.addControls();
         this.addThumbItems();
         this.show(this.index);
+        divSound.addEventListener('click', () => {
+            if (this.slide instanceof HTMLVideoElement) {
+                this.soundVideo(this.slide);
+            }
+        });
     }
 }
 //# sourceMappingURL=Slide.js.map

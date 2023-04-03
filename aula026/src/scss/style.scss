@@ -25,11 +25,12 @@ img, video {
     position: relative;
 }
 
-#slide .div-sound {
+#slide .div-sound, .div-paused {
     width: 50px;
     height: 50px;
     opacity: 1;
     visibility: visible;
+    cursor: pointer;
 
     display: flex;
     align-items: center;
@@ -42,6 +43,12 @@ img, video {
         font-size: 2em;
         color: gray;
     }
+}
+
+#slide .div-paused {
+    top: 0 !important;
+    left: initial;
+    right: 0 !important;
 }
 
 #slide-elements {
